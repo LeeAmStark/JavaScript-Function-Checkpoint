@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+<script defer src="StringManipulation.js"></script>
+
+<style>
+  * {
+    text-transform: uppercase;
+  }
+
+  .page-space {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .name-reverser {
+    background-color: aquamarine;
+    padding: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .name-input {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: xx-large;
+  }
+
+  .name-display {
+    background-color: rgb(143, 180, 180);
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .name-display-reversed {
+    background-color: rgb(143, 180, 180);
+    border-radius: 5px;
+    padding: 15px;
+  }
+
+  .input-n-count {
+    display: flex;
+    gap: 25px;
+  }
+
+  .sentence{
+    text-transform: lowercase;
+  }
+
+  .uppercaseEm{
+    text-transform: capitalize;
+  }
+</style>
+
+<body>
+  <div class="page-space">
+    <div class="name-reverser">
+      <div class="input-n-count">
+        <input type="text" class="name-input" placeholder="Input a word" />
+        <div class="character-count">
+          <h2>0</h2>
+        </div>
+      </div>
+      <button class="reverse">Reverse This Name</button>
+
+      <span class="name-display">
+        <h3>Reversed Name Here</h3>
+      </span>
+    </div>
+
+    <div>
+      <h3 class="sentence">
+        lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit numquam sed dolor odio
+        neque autem, harum porro modi vero commodi vitae non quo animi repellat cum. Quasi vitae sunt minima.
+      </h3>
+    </div>
+  </div>
+</body>
+
+</html>
