@@ -60,6 +60,12 @@ function sumArrValues(){
 
 sumArrValues();
 findHigherNum();
+
+let mixedArray = [1, "two", 3, "four", 5, "six", 7, "eight", 9, "ten"];
+
+function findStrings(){
+    var 
+}
 // function capitalizeFirstLetter(sentence) {
 //     // Split the sentence into an array of words
 //     let words = sentence.split(" ");
