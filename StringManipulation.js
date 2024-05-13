@@ -50,7 +50,7 @@ function findHigherNum() {
     // Log the Lower Numbers
 }
 
-function sumArrValues(){
+function sumArrValues() {
     var arraySum = 0;
     for (let index = 0; index < numbers.length; index++) {
         arraySum += numbers[index];
@@ -61,21 +61,40 @@ function sumArrValues(){
 sumArrValues();
 findHigherNum();
 
-let mixedArray = [1, "two", 3, "four", 5, "six", 7, "eight", 9, "ten"];
 
-function findStrings(){
-    var 
+function calculateFactorial(number) {
+    if (number === 0) {
+        return 1;
+    }
+
+    return number * calculateFactorial(number - 1);
 }
-// function capitalizeFirstLetter(sentence) {
-//     // Split the sentence into an array of words
-//     let words = sentence.split(" ");
 
-//     // Iterate over each word
-//     for (let i = 0; i < words.length; i++) {
-//         // Capitalize the first letter of each word
-//         words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
-//     }
+console.log("This is factorial: " + calculateFactorial(4));
 
-//     // Join the words back into a sentence
-//     return words.join(" ");
-// }
+
+
+function isPrime(number) {
+    // Check if number is less than 2, as 0 and 1 are not prime numbers
+    if (number < 2) {
+        return false;
+    }
+    // Check for divisibility from 2 to the square root of the number
+    for (let i = 2; i <= Math.sqrt(number); i++) {
+        if (number % i === 0) {
+            return false; // If divisible by any number, it's not prime
+        }
+    }
+    return true; // If not divisible by any number, it's prime
+}
+
+// Example usage:
+console.log(isPrime(15)); // Output: true (7 is a prime number)
+console.log(isPrime(67)); // Output: false (10 is not a prime number)
+
+
+var number = 2
+
+if (number % 2 == 1) {
+    console.log("this is a prime number")
+}
